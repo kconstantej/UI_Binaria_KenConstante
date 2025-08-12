@@ -1,0 +1,337 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Chrome_CargaArchivo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_PathArchivoFinal" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Chrome_CargaArchivo" sap:VirtualizedContainerService.HintSize="1289,2669" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message Inicia Chrome_CargaArchivo" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"---&gt;Inicia Chrome_CargaArchivo..."</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Automation Anywhere Labs - Cyber Loss" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,2309" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do archivo" sap:VirtualizedContainerService.HintSize="988,2060" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cyber Loss Prevention'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="34301973-ad98-497c-a05a-d043b02e9936" ContentHash="YAA_gtnsk0-GYy4A1PTY_g" CvElementArea="45, 12, 239, 36" CvTextArea="78, 22, 169, 13" CvTextArgument="Automation Anywhere Labs - C" CvType="Button" DesignTimeRectangle="36, 8, 256, 41" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome*' role='pane' /&gt;&lt;ctrl name='Automation Anywhere Labs - Cyber Loss Prevention' role='page tab' /&gt;" Guid="2b248d99-8bf9-41e1-a5df-c9918751f9c8" InformativeScreenshot="06424b5fa5412110320ff905bf8ae5a2.png" Reference="TgrS9lbt7kaBji_ZMtNtew/CB2qRlAzTk-38QZvgWUVuA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'INPUT fileToUpload'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,569" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears existe boton carga" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT fileToUpload(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" ContentHash="m-q_YqMRYkGcd_v6oYE9dQ" DesignTimeRectangle="421, 913, 895, 38" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' type='file' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ba6b0f9c-b4bf-4558-b956-3dc16870f7af" InformativeScreenshot="1aa2653c76b2262b43b29f715d905e1b.png" Reference="TgrS9lbt7kaBji_ZMtNtew/96m_wkZfVE2XuW3uEwIaRQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="94c9c7ab-de3e-4053-87bf-480d56a748c1" CvElementArea="1344, 911, 143, 43" CvTextArea="1372, 925, 86, 17" CvTextArgument="Upload File" CvType="Button" DesignTimeRectangle="1346, 913, 140, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='btnUploadFile' tag='BUTTON' type='button' class='btn btn-danger btn-lg' aaname='Upload File' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload File' /&gt;" Guid="a106e3e2-3fcc-45ec-ad7f-cc75dd34a0ee" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear boton carga" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Error al encontrar el boton de carga de archivo csv" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_1">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">new System.Exception("Error al encontrar el boton de carga de archivo csv")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" ContentHash="fuRLU-5UAkWYlfIjDcJoyA" DesignTimeRectangle="421, 913, 895, 38" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' type='file' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="12a05193-95cf-449a-8ec3-bd1284ce1801" InformativeScreenshot="beac707f66891720e193be39f39f6bed.png" Reference="TgrS9lbt7kaBji_ZMtNtew/VI6F2sBgOUqlnhcCxbt1VQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="94c9c7ab-de3e-4053-87bf-480d56a748c1" CvElementArea="1344, 911, 143, 43" CvTextArea="1372, 925, 86, 17" CvTextArgument="Upload File" CvType="Button" DesignTimeRectangle="1346, 913, 140, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='btnUploadFile' tag='BUTTON' type='button' class='btn btn-danger btn-lg' aaname='Upload File' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload File' /&gt;" Guid="3c579cbd-52ce-4a43-a6e1-8cdc4e2739a2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '&amp;Nombre de archivo'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="8c1a2d27-9fa2-445d-8309-82b7f39d7939" ContentHash="7abT5ua5Vk6MAgMF1GO97Q" CvElementArea="248, 459, 489, 25" CvType="InputBox" DesignTimeRectangle="252, 465, 463, 15" ElementType="InputBox" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="b5a58eff-52b5-4630-b0ce-6ca0a4b48d78" InformativeScreenshot="91f6859a3a54a059fdfe6f9515416edf.png" IsResponsive="True" Reference="TgrS9lbt7kaBji_ZMtNtew/RFcU4L_qGEq-W6fCixOxDw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="8c1a2d27-9fa2-445d-8309-82b7f39d7939" CvTextArea="137, 465, 106, 12" CvTextArgument="Nombre de archivo:" CvType="Text" DesignTimeRectangle="138, 464, 105, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nombre de archivo:' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='&amp;amp;Nombre de archivo:' /&gt;" Guid="8fff4fff-100d-44c8-867f-010135949d02" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Data\\Output\\",in_Config["NombreArchivoCsv"].ToString())</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Abrir'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="3031884b-9059-4b0b-a75a-e2ac820cd42e" ContentHash="jOBOYmuZvUmspCUagKS97A" CvElementArea="747, 489, 89, 26" CvTextArea="776, 495, 29, 12" CvTextArgument="Abrir" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" Guid="c0939162-4926-4937-94b8-178aca8b743f" InformativeScreenshot="29eb7a3f25c77ea02e0fbdc8fc45ac6f.png" Reference="TgrS9lbt7kaBji_ZMtNtew/V5FEzIoBG0qURtzLVaDx3w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3031884b-9059-4b0b-a75a-e2ac820cd42e" CvElementArea="847, 489, 88, 26" CvTextArea="867, 495, 48, 12" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="847, 489, 88, 26" ElementType="Button" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='Cancelar' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Cancelar' /&gt;" Guid="2b80b789-3070-4a7c-9be0-ff7909dbc27a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Upload File'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="30d06b42-fbcc-482b-93fe-1b94cd121dde" ContentHash="RZpT5mKCXU-NG_wQGp1kOA" CvElementArea="1344, 884, 143, 43" CvTextArea="1372, 898, 87, 17" CvTextArgument="Upload File" CvType="Button" DesignTimeRectangle="1346, 886, 140, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnUploadFile' tag='BUTTON' /&gt;" Guid="3f341988-2df2-4dff-a048-e16c2d5294d7" InformativeScreenshot="26e81d678adc39975f9935fe2bde64e0.png" Reference="TgrS9lbt7kaBji_ZMtNtew/X6W-jpwUKEGlVmNBCYpSiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="421, 886, 895, 38" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' /&gt;" Guid="f0e6309f-9441-4b76-89ff-3e9e5f6cba86" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Download certificate'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,468" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c26ff7ba-39c3-44d0-8559-3631bf6ce2c1" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears certificado" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message carga archivo exitosa" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"carga archivo exitosa"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear certificado" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Error al cargar el archivo final no se pudo descargar el certificado" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_2">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">new System.Exception("Error al cargar el archivo final no se pudo descargar el certificado")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="118241eb-8c85-4984-a4b2-1ceaa274d281" ContentHash="j9_3SN243k-_8l5M_V5fMQ" CvElementArea="870, 783, 185, 43" CvTextArea="883, 797, 159, 14" CvTextArgument="Download certificate" CvType="Button" DesignTimeRectangle="872, 785, 181, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='download-btn-modal' tag='A' /&gt;" Guid="a24cd1e8-8eda-4a29-ae4d-6110740bd243" InformativeScreenshot="93bd0ea8847775406b76e4d88adaff1b.png" Reference="TgrS9lbt7kaBji_ZMtNtew/6_a9Zd3bOEenv3lIX2eYnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="118241eb-8c85-4984-a4b2-1ceaa274d281" CvTextArea="784, 723, 295, 18" CvTextArgument="Copy code to claim your certificate" CvType="Text" DesignTimeRectangle="785, 714, 293, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='guid' tag='SPAN' class='m-auto pt-1' aaname='Copy code to claim your certificate' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Copy code to claim your certificate' /&gt;" Guid="8d46736e-4a8b-40d9-a24d-b61ffdb9454d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1064, -1088, 1936, 1048" BrowserType="Chrome" ContentHash="J98lb9B-f0itGgp-QIAc6w" IconBase64="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" InformativeScreenshot="4a0ecb45ff35e9d9dff48bf6b3e5b9d3.jpg" Reference="TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" Version="V2">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">in_Config["UrlPathFinder"].ToString()</CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message Termina Chrome_CargaArchivo" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Termina Chrome_CargaArchivo"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

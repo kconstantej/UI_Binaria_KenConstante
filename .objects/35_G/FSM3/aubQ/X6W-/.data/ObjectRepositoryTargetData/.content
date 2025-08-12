@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RZpT5mKCXU-NG_wQGp1kOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="30d06b42-fbcc-482b-93fe-1b94cd121dde" CvElementArea="1344, 884, 143, 43" CvTextArea="1372, 898, 87, 17" CvTextArgument="Upload File" CvType="Button" DesignTimeRectangle="1346, 886, 140, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnUploadFile' tag='BUTTON' /&gt;" Guid="3f341988-2df2-4dff-a048-e16c2d5294d7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="421, 886, 895, 38" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' /&gt;" Guid="f0e6309f-9441-4b76-89ff-3e9e5f6cba86" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="26e81d678adc39975f9935fe2bde64e0.png" xmlns="">0CvL9-dkUbEStdOKKn3lBFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Download certificate",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "6_a9Zd3bOEenv3lIX2eYnw",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/6_a9Zd3bOEenv3lIX2eYnw",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ",
+  "Created": "2025-08-12T06:24:51.2366532Z",
+  "Updated": "2025-08-12T06:24:51.2366532Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

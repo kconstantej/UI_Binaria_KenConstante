@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Yg_DJAcv1k6B0RltvjEGng" Reference="TgrS9lbt7kaBji_ZMtNtew/VyOR756zPkiqQBXj9McVWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="d6c6rY4-Wk6zrYpwojdgWw" Reference="TgrS9lbt7kaBji_ZMtNtew/VyOR756zPkiqQBXj9McVWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html" DesignTimeRectangle="274, 445, 1598, 2393" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;" Guid="1695d5a4-b9d2-47cc-a026-eb23a649c1ea" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="a656db64122eebab7fe1df9e6d146cbb.png" xmlns="">0dBi3Itn7Uka79yVY-hCRXw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html" ContentHash="WgamaRZfoEu7drsI2mYpYg" DesignTimeRectangle="274, -1518, 1598, 2393" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;" Guid="562598b0-96ca-44b2-81e7-06630ccf3f55" Reference="TgrS9lbt7kaBji_ZMtNtew/VyOR756zPkiqQBXj9McVWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a656db64122eebab7fe1df9e6d146cbb.png" xmlns="">0Z9ME_Npr-EC2khFgeQmG6Q</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">ExtractData</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;
@@ -92,6 +92,10 @@
 	&lt;/Column&gt;
 	&lt;Column xsi:type='DataNextLink' /&gt;
 &lt;/Table&gt;</p:InArgument>
-    <x:Null x:Key="NextLinkTarget" />
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html" CVScreenId="35c7b794-c57e-47d3-bdbb-29c4d4ca046f" CvElementArea="1839, 895, 17, 17" CvType="ArrowButton" DesignTimeRectangle="1833, 884, 29, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='›' tag='BUTTON' innertext='›' visibleinnertext='›' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='›' tag='BUTTON' innertext='›' visibleinnertext='›' type='' class='datatable-pagination-list-item-link' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:innertext='fuzzy' fuzzylevel:innertext='0.0' matching:visibleinnertext='fuzzy' fuzzylevel:visibleinnertext='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='›' /&gt;" Guid="db864c59-a7e5-4c0f-a99e-29699b693d40" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="m-q_YqMRYkGcd_v6oYE9dQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" DesignTimeRectangle="421, 913, 895, 38" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='fileToUpload' tag='INPUT' type='file' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ba6b0f9c-b4bf-4558-b956-3dc16870f7af" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="94c9c7ab-de3e-4053-87bf-480d56a748c1" CvElementArea="1344, 911, 143, 43" CvTextArea="1372, 925, 86, 17" CvTextArgument="Upload File" CvType="Button" DesignTimeRectangle="1346, 913, 140, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='btnUploadFile' tag='BUTTON' type='button' class='btn btn-danger btn-lg' aaname='Upload File' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload File' /&gt;" Guid="a106e3e2-3fcc-45ec-ad7f-cc75dd34a0ee" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1aa2653c76b2262b43b29f715d905e1b.png" xmlns="">0fq6axa8rAU-0YYoR7VRsSg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="j9_3SN243k-_8l5M_V5fMQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="118241eb-8c85-4984-a4b2-1ceaa274d281" CvElementArea="870, 783, 185, 43" CvTextArea="883, 797, 159, 14" CvTextArgument="Download certificate" CvType="Button" DesignTimeRectangle="872, 785, 181, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='download-btn-modal' tag='A' /&gt;" Guid="a24cd1e8-8eda-4a29-ae4d-6110740bd243" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="118241eb-8c85-4984-a4b2-1ceaa274d281" CvTextArea="784, 723, 295, 18" CvTextArgument="Copy code to claim your certificate" CvType="Text" DesignTimeRectangle="785, 714, 293, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='guid' tag='SPAN' class='m-auto pt-1' aaname='Copy code to claim your certificate' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Copy code to claim your certificate' /&gt;" Guid="8d46736e-4a8b-40d9-a24d-b61ffdb9454d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="93bd0ea8847775406b76e4d88adaff1b.png" xmlns="">0HCsrhmimWk2T7y3GJLKvnA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

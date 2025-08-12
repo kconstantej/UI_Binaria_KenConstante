@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cyber Loss Prevention",
+  "Type": "Element",
+  "Id": "CB2qRlAzTk-38QZvgWUVuA",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/CB2qRlAzTk-38QZvgWUVuA",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ",
+  "Created": "2025-08-12T04:16:20.8175348Z",
+  "Updated": "2025-08-12T04:16:20.8175348Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

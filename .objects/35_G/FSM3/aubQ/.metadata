@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Automation Anywhere Labs - Cyber Loss ",
+  "Type": "Screen",
+  "Id": "aubQb56TAUGtGvXx1FmzMQ",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/FSM3ceFpVUaST6PKZoerIw",
+  "Created": "2025-08-12T03:40:03.9782675Z",
+  "Updated": "2025-08-12T03:40:03.9782675Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

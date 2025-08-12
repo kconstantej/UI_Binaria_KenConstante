@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YAA_gtnsk0-GYy4A1PTY_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="34301973-ad98-497c-a05a-d043b02e9936" CvElementArea="45, 12, 239, 36" CvTextArea="78, 22, 169, 13" CvTextArgument="Automation Anywhere Labs - C" CvType="Button" DesignTimeRectangle="36, 8, 256, 41" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome*' role='pane' /&gt;&lt;ctrl name='Automation Anywhere Labs - Cyber Loss Prevention' role='page tab' /&gt;" Guid="2b248d99-8bf9-41e1-a5df-c9918751f9c8" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Automation Anywhere Labs - Cyber Loss Prevention - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="06424b5fa5412110320ff905bf8ae5a2.png" xmlns="">0x-yIxaFTA0ilr-cbo37KSA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Upload File",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "X6W-jpwUKEGlVmNBCYpSiA",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/X6W-jpwUKEGlVmNBCYpSiA",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ",
+  "Created": "2025-08-12T04:22:52.2425798Z",
+  "Updated": "2025-08-12T04:22:52.2425798Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Dirección DRPAUIPAT…",
+  "Type": "Element",
+  "Id": "IbSHeOwkUkKZeja6G2OKVQ",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/IbSHeOwkUkKZeja6G2OKVQ",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/aubQb56TAUGtGvXx1FmzMQ",
+  "Created": "2025-08-12T03:46:52.3453863Z",
+  "Updated": "2025-08-12T03:46:52.3453863Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
