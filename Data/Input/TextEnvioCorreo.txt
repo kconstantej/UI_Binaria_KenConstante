@@ -1,0 +1,122 @@
+<HTML><HEAD>
+<STYLE type=text/css>
+        body {
+            font-family: Calibri;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .mapping {
+            background-color: #D3D4D7;
+            color: black;
+            padding: 1px;
+        }
+    </STYLE>
+<!-- Instruct the web browser control to use IE 6 to render the page. -->
+<META content=IE=6 http-equiv=X-UA-Compatible></HEAD>
+<BODY>
+<P>&nbsp;
+<TABLE style="FONT-FAMILY: Arial, helvetica, sans-serif; WIDTH: 1303px; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-SPACING: 0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(243,244,247); -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#f3f4f7 border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" align=center>
+<TABLE class=container-xs style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width=600 align=center border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><CUSTOM style="MAX-HEIGHT: 1000000px; text-size-adjust: none" name="opencounter" type="tracking">
+<DIV style="MAX-HEIGHT: 1000000px; text-size-adjust: none" data-type="slot" data-key="header_security"></DIV>
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR></TBODY></TABLE>
+<TABLE class=bradius-xs-0 style="OVERFLOW: hidden; WIDTH: 600px; MAX-HEIGHT: 1000000px; text-size-adjust: none; box-shadow: rgb(215, 215, 215) 0px 2px 12px 0px; border-radius: 4px" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<DIV style="MAX-HEIGHT: 1000000px; text-size-adjust: none" data-type="slot" data-key="contenido1"></DIV>
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(255,255,255); text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" vAlign=top>
+<TABLE style="WIDTH: 600px; BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 20px; TEXT-ALIGN: left; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" vAlign=top align=left><IMG class=h-xs-36 style="BORDER-TOP: 0px; HEIGHT: 42px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; DISPLAY: block; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" alt="Logo Banco Pichincha" src="https://media.licdn.com/dms/image/v2/D4E0BAQE_dQh491hzsQ/company-logo_200_200/company-logo_200_200/0/1732660167935/binaria_sistemas_logo?e=2147483647&v=beta&t=uXr7ZHd8SyYe6vFbI3Zym47IEYQs34Q-VpAjfxWQX7A" height=42></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE class=condiciones-span-gris style="BORDER-TOP: rgb(222,227,237) 1px solid; HEIGHT: 5px; WIDTH: 600px; MARGIN-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; MARGIN-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width=600>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE style="WIDTH: 600px; BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(255,255,255); text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" bgColor=#000000 border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none"></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD class="px-xs-16 pb-xs-32" style="PADDING-BOTTOM: 40px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 40px; PADDING-RIGHT: 40px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><SPAN class=font-xs-C32 style="FONT-SIZE: 32px; FONT-FAMILY: Arial; FONT-WEIGHT: normal; COLOR: rgb(15,38,92); FONT-STYLE: normal; LETTER-SPACING: normal; LINE-HEIGHT: 40px; MAX-HEIGHT: 1000000px; text-size-adjust: none; font-stretch: normal"><FONT size=5>RPA de Prevención de pérdidas cibernéticas</FONT></SPAN></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD class=px-xs-16 style="PADDING-LEFT: 40px; PADDING-RIGHT: 40px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE style="MIN-WIDTH: 100%; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: transparent; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE style="MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE style="BORDER-TOP: rgb(222,227,237) 1px solid; HEIGHT: 296px; BORDER-RIGHT: rgb(222,227,237) 1px solid; WIDTH: 524px; BORDER-BOTTOM: rgb(222,227,237) 1px solid; BORDER-LEFT: rgb(222,227,237) 1px solid; MAX-HEIGHT: 1000000px; text-size-adjust: none; border-radius: 8px" cellSpacing=0 cellPadding=0 width=524>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE style="MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(249,250,252); text-size-adjust: none; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none" width="100%">
+<TABLE style="MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD class=pl-xs-16 style="PADDING-BOTTOM: 26px; PADDING-TOP: 16px; PADDING-LEFT: 24px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><SPAN class=font-xs-C14 style="FONT-SIZE: 16px; FONT-FAMILY: Arial; FONT-WEIGHT: 400; COLOR: rgb(44,44,48); LINE-HEIGHT: 24px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><SPAN class=mapping contentEditable=false>in_body</SPAN></SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD class=pt-xs-56 style="PADDING-TOP: 63px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE class=condiciones-span-gris style="BORDER-TOP: rgb(222,227,237) 1px solid; MARGIN-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; MARGIN-LEFT: 0px; PADDING-RIGHT: 40px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 40px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><SPAN style="FONT-SIZE: 20px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: rgb(44,44,48); FONT-STYLE: normal; LETTER-SPACING: normal; LINE-HEIGHT: normal; MAX-HEIGHT: 1000000px; text-size-adjust: none; font-stretch: normal">Atentamente,</SPAN></TD></TR>
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 36px; PADDING-TOP: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><SPAN style="FONT-SIZE: 18px; FONT-FAMILY: Arial; FONT-WEIGHT: 400; COLOR: rgb(74,74,74); FONT-STYLE: normal; LETTER-SPACING: normal; LINE-HEIGHT: 24px; MAX-HEIGHT: 1000000px; text-size-adjust: none; font-stretch: normal">RPA<BR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">Binaria</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE id=segmentoSeparador0 class="tb_properties border_style" style="MARGIN-BOTTOM: 0px; MARGIN-TOP: 24px; MIN-WIDTH: 100%; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(15,38,92); text-size-adjust: none; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px 0px; border-radius: 4px" cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff>
+<TBODY></TBODY></TABLE>
+<TABLE style="WIDTH: 600px; BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(255,255,255); text-size-adjust: none; box-shadow: rgb(215, 215, 215) 0px 2px 12px 0px; border-radius: 4px" cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<DIV style="MAX-HEIGHT: 1000000px; text-size-adjust: none" data-type="slot" data-key="contenido2"></DIV>
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD class="px-xs-20 pt-xs-20" style="PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><A class=sinEstilos style="FONT-SIZE: 14px; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: rgb(15,38,92); LINE-HEIGHT: 16px; MAX-HEIGHT: 1000000px; text-size-adjust: none" href="https://www.pichincha.com/portal/" target=_blank>www.binaria.com.ec</A></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"><BR style="MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV style="MAX-HEIGHT: 1000000px; text-size-adjust: none" data-type="slot" data-key="footer"></DIV>
+<TABLE style="BORDER-SPACING: 0px; MAX-HEIGHT: 1000000px; BACKGROUND-COLOR: rgb(243,244,247); text-size-adjust: none" cellSpacing=0 cellPadding=0 width="100%" bgColor=#f3f4f7 border=0>
+<TBODY style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TR style="MAX-HEIGHT: 1000000px; text-size-adjust: none">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MAX-HEIGHT: 1000000px; text-size-adjust: none"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CUSTOM></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P></BODY></HTML>
