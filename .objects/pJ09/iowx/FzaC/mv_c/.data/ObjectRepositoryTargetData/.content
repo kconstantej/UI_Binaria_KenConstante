@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CLhlvo3uw0W7u6AYHoTX1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="ad462628-1002-4fb5-a7d4-13970037dcd3" CvElementArea="419, 579, 161, 39" CvTextArea="431, 591, 136, 17" CvTextArgument="Ryan's Club Login" CvType="Button" DesignTimeRectangle="421, 581, 157, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' /&gt;" Guid="e8eb8061-dd44-4b27-b74c-617b521ac91c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ad462628-1002-4fb5-a7d4-13970037dcd3" CvElementArea="788, 579, 257, 39" CvTextArea="800, 591, 233, 14" CvTextArgument="Customer Database Download" CvType="Button" DesignTimeRectangle="791, 581, 252, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Customer Database Download' aria-role='button' tag='A' type='' class='btn btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Customer Database Download' /&gt;" Guid="1caeaff5-de2f-4020-b087-b28ace27774a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bbdf5b537d304868e81ee4f607bdef24.png" xmlns="">06PlUvuHIRU6iHpf6CD7cxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

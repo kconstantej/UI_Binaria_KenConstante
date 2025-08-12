@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MO0HH_NoC0ObMlr4rBeIBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="677c86ac-edff-46c5-bf14-ad4cee291b67" CvElementArea="711, 563, 512, 47" CvTextArea="901, 579, 133, 17" CvTextArgument="Community login" CvType="Button" DesignTimeRectangle="713, 564, 510, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Community login' tag='BUTTON' /&gt;" Guid="18e97b74-9f46-4beb-8a0c-b6b960beacb3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="677c86ac-edff-46c5-bf14-ad4cee291b67" CvElementArea="711, 620, 512, 47" CvTextArea="909, 635, 117, 17" CvTextArgument="Employee login" CvType="Button" DesignTimeRectangle="713, 620, 510, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Employee login' tag='BUTTON' type='' class='button_btn__tYoLK button_outline-btn__Gkmnq  u-flex-center u-fs-16 u-fw-700 u-pos-r u-cursor-pointer ' aaname='Employee login' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Employee login' /&gt;" Guid="0e667c6d-9d80-4e0e-b74a-481292a1a006" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ed6f8a7591bee832efb87cad3b143a87.png" xmlns="">0ibdW1NVpi0K6u2AuhNc0AQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Automation Anywhere Labs - Prevención de Pérdidas Cibernéticas",
+  "Type": "App",
+  "Id": "pJ09WrfGkkmdBHE1X7F5Ug",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/pJ09WrfGkkmdBHE1X7F5Ug",
+  "Created": "2025-08-11T20:48:11.6793936Z",
+  "Updated": "2025-08-11T20:48:11.6793936Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

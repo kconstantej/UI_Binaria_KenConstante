@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Community login",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "X1LDsVVTHE-BluYqF8EkcA",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/X1LDsVVTHE-BluYqF8EkcA",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/FzaCxb0kZ06y7ncc1YJKsQ",
+  "Created": "2025-08-11T21:39:14.2628648Z",
+  "Updated": "2025-08-11T21:39:14.2628648Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

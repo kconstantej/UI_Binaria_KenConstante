@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OPmH78NsYUKKL46yggGnIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" CvElementArea="809, 451, 353, 46" CvTextArea="967, 466, 39, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="812, 453, 349, 43" ElementType="Button" FullSelectorArgument="&lt;webctrl sfl-path='siteforceLoginApp2/siteforceRouterInitializer/siteforceGeneratedpageEcaa7df97b88425cA95034606c6054ffC42/cIDP_LoginForm/auraIf/lightningButton:submitButton/auraHtml:privateButton' tag='BUTTON' /&gt;" Guid="400a8372-2462-4f12-b38b-5cd1d1fa619a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" CvElementArea="774, 405, 388, 39" CvType="InputBox" DesignTimeRectangle="776, 407, 385, 36" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="dce50478-68c1-47eb-a5db-2cdc269c1af7" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a566a1ce6b914c305f7bd65b43c969f.png" xmlns="">0-4d4LKhHaEa98aoAo42lBw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

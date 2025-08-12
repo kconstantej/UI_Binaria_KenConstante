@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o3jy1HG7KkW-xYjPfP1TUw" Reference="TgrS9lbt7kaBji_ZMtNtew/Hrh0D4nLfkSfI6J6iOKukg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html" CVScreenId="a44a43ec-06a0-417a-bd23-15e7662f6525" CvElementArea="441, 492, 50, 33" CvTextArea="450, 502, 31, 13" CvTextArgument="View" CvType="Button" DesignTimeRectangle="442, 493, 48, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='layoutSidenav_content' tag='A' /&gt;" Guid="1f2e2d7e-6b62-468c-af30-a394a9f1752f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="a44a43ec-06a0-417a-bd23-15e7662f6525" CvTextArea="441, 376, 237, 18" CvTextArgument="Credit Card Dump 349473" CvType="Text" DesignTimeRectangle="442, 373, 382, 24" ElementType="Text" Guid="b221afe0-569c-4ee9-9342-929b34287675" SearchSteps="Selector">
+            <Target.FullSelectorArgument>
+              <p:InArgument x:TypeArguments="x:String">
+                <p:CSharpValue x:TypeArguments="x:String">"&lt;webctrl aaname='Credit Card Dump "+in_Config["NumeroCreditCardDump"].ToString()+"' /&gt;"</p:CSharpValue>
+              </p:InArgument>
+            </Target.FullSelectorArgument>
+          </Target>
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b095dc1bdd34b9a1c261b0e7b32ede9c.png" xmlns="">0gbWs2BmvME-MDqvxeUyimg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

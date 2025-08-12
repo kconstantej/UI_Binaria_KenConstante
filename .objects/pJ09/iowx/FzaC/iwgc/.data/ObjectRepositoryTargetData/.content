@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JLtS-RfQDkSjMiIPwQyljw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="775, 426, 387, 46" CvTextArea="951, 441, 34, 14" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="776, 428, 385, 43" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="fe064941-58af-4dcc-b923-872ddf866cec" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="774, 380, 388, 38" CvType="InputBox" DesignTimeRectangle="776, 382, 385, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="51313e54-0a52-44e7-899b-a822d41e1dae" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="915b195213afe726973d29e8be553128.png" xmlns="">0Ocmj4y8sJUOnpfs5EL1wEg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

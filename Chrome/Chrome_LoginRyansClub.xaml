@@ -1,0 +1,575 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Chrome_LoginRyansClub" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Chrome_LoginRyansClub" sap:VirtualizedContainerService.HintSize="1289,5111" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message Inicia Chrome_LoginRyansClub" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"---&gt;Inicio Chrome_LoginRyansClub..."</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Automation Anywhere Labs - Prevención" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,2692" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do inicio de sesion login AA" sap:VirtualizedContainerService.HintSize="988,2443" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Username" />
+              <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State pup up inicial inicio de sesion login AA" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,529" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears boton pup up inicial inicio sesion login AA" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Check App State inicio de sesion'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" ContentHash="wo37I55z-0iDdHqguoWSSA" CvElementArea="1467, 935, 231, 37" CvTextArea="1522, 946, 119, 16" CvTextArgument="Accept All Cookies" CvType="Button" DesignTimeRectangle="1470, 937, 225, 33" ElementType="Button" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="24cf0892-3f4f-4e9b-90ec-4aeaa3957373" InformativeScreenshot="9d2e1d267546488ef96d78e100af53ce.png" Reference="TgrS9lbt7kaBji_ZMtNtew/9pn40bWUQkaBLcvToM2Ulg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" CvTextArea="1525, 1007, 100, 16" CvTextArgument="Cookie Settings" CvType="Text" DesignTimeRectangle="1314, 995, 524, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-pc-btn-handler' tag='BUTTON' type='' class='cookie-setting-link' aaname='Cookie Settings' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cookie Settings' /&gt;" Guid="d81d4220-ef71-4228-8437-45c0e03e654d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear boton pup up inicial inicio sesion login AA" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw error al inciar pup up inicial pagina inicial" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_5">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">new System.Exception("Error al ingresar a pagina login AA.")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" ContentHash="wo37I55z-0iDdHqguoWSSA" CvElementArea="1467, 935, 231, 37" CvTextArea="1522, 946, 119, 16" CvTextArgument="Accept All Cookies" CvType="Button" DesignTimeRectangle="1470, 937, 225, 33" ElementType="Button" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="24cf0892-3f4f-4e9b-90ec-4aeaa3957373" InformativeScreenshot="9d2e1d267546488ef96d78e100af53ce.png" Reference="TgrS9lbt7kaBji_ZMtNtew/9pn40bWUQkaBLcvToM2Ulg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" CvTextArea="1525, 1007, 100, 16" CvTextArgument="Cookie Settings" CvType="Text" DesignTimeRectangle="1314, 995, 524, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-pc-btn-handler' tag='BUTTON' type='' class='cookie-setting-link' aaname='Cookie Settings' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cookie Settings' /&gt;" Guid="d81d4220-ef71-4228-8437-45c0e03e654d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Community login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="677c86ac-edff-46c5-bf14-ad4cee291b67" ContentHash="MO0HH_NoC0ObMlr4rBeIBg" CvElementArea="711, 563, 512, 47" CvTextArea="901, 579, 133, 17" CvTextArgument="Community login" CvType="Button" DesignTimeRectangle="713, 564, 510, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Community login' tag='BUTTON' /&gt;" Guid="18e97b74-9f46-4beb-8a0c-b6b960beacb3" InformativeScreenshot="ed6f8a7591bee832efb87cad3b143a87.png" Reference="TgrS9lbt7kaBji_ZMtNtew/X1LDsVVTHE-BluYqF8EkcA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="677c86ac-edff-46c5-bf14-ad4cee291b67" CvElementArea="711, 620, 512, 47" CvTextArea="909, 635, 117, 17" CvTextArgument="Employee login" CvType="Button" DesignTimeRectangle="713, 620, 510, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Employee login' tag='BUTTON' type='' class='button_btn__tYoLK button_outline-btn__Gkmnq  u-flex-center u-fs-16 u-fw-700 u-pos-r u-cursor-pointer ' aaname='Employee login' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Employee login' /&gt;" Guid="0e667c6d-9d80-4e0e-b74a-481292a1a006" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Cdr_AA" CacheStrategy="None" DisplayName="Get Credential login AA" FolderPath="UI_Binaria_KenConstante" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3">
+              <ui:GetRobotCredential.Password>
+                <OutArgument x:TypeArguments="ss:SecureString">
+                  <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Password</CSharpReference>
+                </OutArgument>
+              </ui:GetRobotCredential.Password>
+              <ui:GetRobotCredential.Username>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Username</CSharpReference>
+                </OutArgument>
+              </ui:GetRobotCredential.Username>
+            </ui:GetRobotCredential>
+            <uix:NSetText DisplayName="Set Text 'INPUT 2550'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,194" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" ContentHash="GBej0XL58kSkcfcu7skLXw" CvElementArea="774, 380, 388, 38" CvType="InputBox" DesignTimeRectangle="776, 382, 385, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="85a34666-8643-4b9b-9e58-dc8fc6a9ab56" InformativeScreenshot="92288b505d6a309fc85cdf14b864c5d4.png" Reference="TgrS9lbt7kaBji_ZMtNtew/c1-TFOhGCEeokm6qR5J5iA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="775, 426, 387, 46" CvTextArea="951, 441, 34, 14" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="776, 428, 385, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='slds-button slds-button_brand button' aaname='Next' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="042405b2-3c8d-43a3-918d-4dc599b1809d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSetText.Target>
+              <uix:NSetText.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">Username</CSharpValue>
+                </InArgument>
+              </uix:NSetText.Text>
+            </uix:NSetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" ContentHash="JLtS-RfQDkSjMiIPwQyljw" CvElementArea="775, 426, 387, 46" CvTextArea="951, 441, 34, 14" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="776, 428, 385, 43" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="fe064941-58af-4dcc-b923-872ddf866cec" InformativeScreenshot="915b195213afe726973d29e8be553128.png" Reference="TgrS9lbt7kaBji_ZMtNtew/iwgceGNI30KU43ols-sfKQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="774, 380, 388, 38" CvType="InputBox" DesignTimeRectangle="776, 382, 385, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="51313e54-0a52-44e7-899b-a822d41e1dae" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="0.5" DisplayName="Type Into 'INPUT 10126;a'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NTypeInto.SecureText>
+                <InArgument x:TypeArguments="ss:SecureString">
+                  <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">Password</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.SecureText>
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" CvElementArea="774, 405, 388, 39" CvType="InputBox" DesignTimeRectangle="776, 407, 385, 36" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="86943d53-ad87-40ad-88ae-d40c7dc439aa" InformativeScreenshot="73f612e4216ce2331864f161d6dcbbe7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" CvElementArea="809, 451, 353, 46" CvTextArea="967, 466, 39, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="812, 453, 349, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl sfl-path='siteforceLoginApp2/siteforceRouterInitializer/siteforceGeneratedpageEcaa7df97b88425cA95034606c6054ffC42/cIDP_LoginForm/auraIf/lightningButton:submitButton/auraHtml:privateButton' tag='BUTTON' type='button' class='slds-button slds-button_brand button' aaname='Log in' matching:sfl-path='fuzzy' fuzzylevel:sfl-path='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log in' /&gt;" Guid="092c7add-a1fc-4ee1-bf44-d056f983f6a3" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.3" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" ContentHash="OPmH78NsYUKKL46yggGnIw" CvElementArea="809, 451, 353, 46" CvTextArea="967, 466, 39, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="812, 453, 349, 43" ElementType="Button" FullSelectorArgument="&lt;webctrl sfl-path='siteforceLoginApp2/siteforceRouterInitializer/siteforceGeneratedpageEcaa7df97b88425cA95034606c6054ffC42/cIDP_LoginForm/auraIf/lightningButton:submitButton/auraHtml:privateButton' tag='BUTTON' /&gt;" Guid="400a8372-2462-4f12-b38b-5cd1d1fa619a" InformativeScreenshot="0a566a1ce6b914c305f7bd65b43c969f.png" Reference="TgrS9lbt7kaBji_ZMtNtew/f2lMaaZTqEGJVxyxjckdLw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f299ce09-7758-43b2-8957-ed20f53ea90c" CvElementArea="774, 405, 388, 39" CvType="InputBox" DesignTimeRectangle="776, 407, 385, 36" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="dce50478-68c1-47eb-a5db-2cdc269c1af7" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Ryan's Club Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,522" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears boton ryans club login" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ryan's Club Login(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cce4e749-f34b-4952-a53e-67734c9a5615" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="7f13dd81-7a3e-40af-bec8-2e02e48d48b8" ContentHash="170JrB7yZkOJc416sU9dkQ" CvElementArea="419, 579, 161, 39" CvTextArea="431, 591, 136, 17" CvTextArgument="Ryan's Club Login" CvType="Button" DesignTimeRectangle="421, 581, 157, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' /&gt;" Guid="4719fc78-823f-4376-b19d-4005f5c09302" InformativeScreenshot="e06c54e520fafd9f182df6e3fa52d9e3.png" Reference="TgrS9lbt7kaBji_ZMtNtew/iGsfsKVigkSL9JzJ9Ey89g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="7f13dd81-7a3e-40af-bec8-2e02e48d48b8" CvElementArea="788, 579, 257, 39" CvTextArea="800, 591, 233, 14" CvTextArgument="Customer Database Download" CvType="Button" DesignTimeRectangle="791, 581, 252, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Customer Database Download' aria-role='button' tag='A' type='' class='btn btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Customer Database Download' /&gt;" Guid="d1cae22e-071d-46cb-a69f-7559fa1280df" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear boton ryans club login" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Error al ingresra a la pantalla Inicial PathFinder" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_7">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">new System.Exception("Error al ingresra a la pantalla Inicial PathFinder")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="ad462628-1002-4fb5-a7d4-13970037dcd3" ContentHash="CLhlvo3uw0W7u6AYHoTX1w" CvElementArea="419, 579, 161, 39" CvTextArea="431, 591, 136, 17" CvTextArgument="Ryan's Club Login" CvType="Button" DesignTimeRectangle="421, 581, 157, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' /&gt;" Guid="e8eb8061-dd44-4b27-b74c-617b521ac91c" InformativeScreenshot="bbdf5b537d304868e81ee4f607bdef24.png" Reference="TgrS9lbt7kaBji_ZMtNtew/mv_c4Qj00U2zN1IiUzxvRg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ad462628-1002-4fb5-a7d4-13970037dcd3" CvElementArea="788, 579, 257, 39" CvTextArea="800, 591, 233, 14" CvTextArgument="Customer Database Download" CvType="Button" DesignTimeRectangle="791, 581, 252, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Customer Database Download' aria-role='button' tag='A' type='' class='btn btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Customer Database Download' /&gt;" Guid="1caeaff5-de2f-4020-b087-b28ace27774a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1064, -1088, 1936, 1048" BrowserType="Chrome" ContentHash="iIHaLLlu2UesavgH0NB5GA" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_9" InformativeScreenshot="7e7ff43ab7b3f9ef8069728e7d7b83ae.jpg" Reference="TgrS9lbt7kaBji_ZMtNtew/FzaCxb0kZ06y7ncc1YJKsQ" Selector="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" Version="V2">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">in_Config["UrlPathFinder"].ToString()</CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Ryan's Club - Login" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,2059" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do login ryans club" sap:VirtualizedContainerService.HintSize="988,1810" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'INPUT email'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,1276" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears Pantalla login ryans club" sap:VirtualizedContainerService.HintSize="450,1027" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="UsernameRyans" />
+                    <Variable x:TypeArguments="ss:SecureString" Name="PasswordRyans" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Cdr_RyansClub" CacheStrategy="None" DisplayName="Get Credential cdr_ryansClub" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4">
+                    <ui:GetRobotCredential.FolderPath>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">in_Config["OrchestratorFolder"].ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:GetRobotCredential.FolderPath>
+                    <ui:GetRobotCredential.Password>
+                      <OutArgument x:TypeArguments="ss:SecureString">
+                        <CSharpReference x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">PasswordRyans</CSharpReference>
+                      </OutArgument>
+                    </ui:GetRobotCredential.Password>
+                    <ui:GetRobotCredential.Username>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">UsernameRyans</CSharpReference>
+                      </OutArgument>
+                    </ui:GetRobotCredential.Username>
+                  </ui:GetRobotCredential>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="9ea2e5ce-4e4d-464b-84cc-2f420e9932df" ContentHash="9ZqawSVY1kiAuPhvRb8heA" CvElementArea="935, 480, 327, 47" CvType="InputBox" DesignTimeRectangle="936, 481, 326, 45" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="10aafc16-14e4-47c5-a27c-94c9c519c324" InformativeScreenshot="11f8711ab35f2e196f1586de7ff9a464.png" Reference="TgrS9lbt7kaBji_ZMtNtew/ICOI4m8aaUeuxGoQhk7K5g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="9ea2e5ce-4e4d-464b-84cc-2f420e9932df" CvElementArea="934, 545, 327, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="1e21a69e-9513-4def-99d0-e77e6879aae5" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">UsernameRyans</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" IsPassword="True" ScopeIdentifier="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V4">
+                    <uix:NTypeInto.SecureText>
+                      <InArgument x:TypeArguments="ss:SecureString">
+                        <CSharpValue x:TypeArguments="ss:SecureString" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">PasswordRyans</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.SecureText>
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" ContentHash="rwkEQWdEQEO2m3HZLuHPpA" CvElementArea="934, 545, 329, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="17d3b965-5cf9-455f-89e4-e86b72130a35" InformativeScreenshot="6677d294c7652c1b238733da673100d6.png" Reference="TgrS9lbt7kaBji_ZMtNtew/BXPat0rlWkGxFQwLR2hxWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 613, 330, 51" CvTextArea="1075, 631, 46, 19" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="936, 615, 326, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='login' tag='INPUT' type='button' class='btn btn-block login-btn mb-4' aaname='Login' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="54151ed2-a3be-417e-90a0-b99a8e35adbf" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" ContentHash="e_sBIOZ4TEOQnUmSdkKBtw" CvElementArea="934, 613, 330, 51" CvTextArea="1075, 631, 46, 19" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="936, 615, 326, 47" ElementType="Button" FullSelectorArgument="&lt;webctrl id='login' tag='INPUT' /&gt;" Guid="e6664137-8006-4b23-8d9b-f488f445cf25" InformativeScreenshot="a814c4db957593f3c1f313a1c1fe187f.png" Reference="TgrS9lbt7kaBji_ZMtNtew/79FkhTHWVEqmSKYwIKDChQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 545, 329, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="17c445c3-13a1-4c38-a6f0-8082dfc594fc" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear Pantalla login ryans club" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Error al ingresar a la pantalla de login de Ryans's Club" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_8">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">new System.Exception("Error al ingresar a la pantalla de login de Ryans's Club")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" ContentHash="l0ya48GfUUen8BcUxPKD8A" CvElementArea="935, 479, 327, 47" CvType="InputBox" DesignTimeRectangle="936, 481, 326, 45" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="1de33995-68c3-453d-a738-5c97df7b1b0f" InformativeScreenshot="617f60f7c8ecb96c13ecc46d3544b910.png" Reference="TgrS9lbt7kaBji_ZMtNtew/hTdFmtKlDku38hlQ5Grj1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 545, 329, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="da1b6167-4492-4717-94eb-f77764b1c063" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State 'Welcome Home'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,472" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="b0b6a5e7-b754-4784-87cf-c03a5464c612" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears Ingreso exitoso a Ryans Club" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message Ingreso exitoso a Ryans Club" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">"Ingreso exitoso a Ryans Club"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear Ingreso exitoso a Ryans Club" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Error al ingresar a Ryans Club" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_9">
+                    <InArgument x:TypeArguments="s:Exception">
+                      <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">new System.Exception("Error al ingresar a Ryans Club")</CSharpValue>
+                    </InArgument>
+                  </Throw>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html" CVScreenId="f5829cab-8ad0-45d4-bbd9-ac1c70ebc6e2" ContentHash="-Ls3Oca3W0WS9HTjIGkh2g" CvTextArea="255, 235, 302, 34" CvTextArgument="Welcome: Home" CvType="Text" DesignTimeRectangle="257, 227, 1632, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="a878f8ea-1d1e-4ff6-9ad6-49dff5531d0b" InformativeScreenshot="ecba3f446e365dd92dc76b7bb661bc19.png" Reference="TgrS9lbt7kaBji_ZMtNtew/RrEdBzzB60y1_o_F84iTjQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f5829cab-8ad0-45d4-bbd9-ac1c70ebc6e2" CvTextArea="257, 288, 98, 14" CvTextArgument="Recent Events" CvType="Text" DesignTimeRectangle="257, 283, 97, 24" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='layoutSidenav_content' tag='LI' type='' class='breadcrumb-item active' aaname='Recent Events' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Recent Events' /&gt;" Guid="915395e6-64a6-46dd-a492-feb3260774dc" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1064, -1088, 1936, 1048" BrowserType="Chrome" ContentHash="VwI_zeq0Dkq7jOqOhypeZw" IconBase64="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" InformativeScreenshot="301f57ad063f96bbd5e6033cd91bd8ab.jpg" Reference="TgrS9lbt7kaBji_ZMtNtew/Edo-gULMVEmD07_-_zqj-w" Selector="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" Version="V2">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">in_Config["UrlLoginPathfinder"].ToString()</CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message Termina Chrome_LoginRyansClub" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Termina Chrome_LoginRyansClub"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

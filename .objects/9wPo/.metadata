@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Ryan's Club - Credit Card Dumps",
+  "Type": "App",
+  "Id": "9wPot6hYZ0aXOcAb1VY_5g",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/9wPot6hYZ0aXOcAb1VY_5g",
+  "Created": "2025-08-11T22:24:07.3142342Z",
+  "Updated": "2025-08-11T22:24:07.3142342Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

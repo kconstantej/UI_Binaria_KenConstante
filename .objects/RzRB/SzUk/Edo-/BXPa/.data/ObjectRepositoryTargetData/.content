@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rwkEQWdEQEO2m3HZLuHPpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 545, 329, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="17d3b965-5cf9-455f-89e4-e86b72130a35" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 613, 330, 51" CvTextArea="1075, 631, 46, 19" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="936, 615, 326, 47" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='login' tag='INPUT' type='button' class='btn btn-block login-btn mb-4' aaname='Login' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="54151ed2-a3be-417e-90a0-b99a8e35adbf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6677d294c7652c1b238733da673100d6.png" xmlns="">0OSuxuPk6hUaqMxfcoLkaeg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

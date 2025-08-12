@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="170JrB7yZkOJc416sU9dkQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="7f13dd81-7a3e-40af-bec8-2e02e48d48b8" CvElementArea="419, 579, 161, 39" CvTextArea="431, 591, 136, 17" CvTextArgument="Ryan's Club Login" CvType="Button" DesignTimeRectangle="421, 581, 157, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' tag='A' /&gt;" Guid="4719fc78-823f-4376-b19d-4005f5c09302" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Cyber Loss Prevention' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7f13dd81-7a3e-40af-bec8-2e02e48d48b8" CvElementArea="788, 579, 257, 39" CvTextArea="800, 591, 233, 14" CvTextArgument="Customer Database Download" CvType="Button" DesignTimeRectangle="791, 581, 252, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Customer Database Download' aria-role='button' tag='A' type='' class='btn btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Customer Database Download' /&gt;" Guid="d1cae22e-071d-46cb-a69f-7559fa1280df" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e06c54e520fafd9f182df6e3fa52d9e3.png" xmlns="">0HaSWTd5BK0mky5so5tHAOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

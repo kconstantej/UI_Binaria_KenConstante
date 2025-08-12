@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Ryan's Club - Login",
+  "Type": "App",
+  "Id": "RzRBkm60W0uEIU-IOg5HnA",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/RzRBkm60W0uEIU-IOg5HnA",
+  "Created": "2025-08-11T21:48:19.4325385Z",
+  "Updated": "2025-08-11T21:48:19.4325385Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

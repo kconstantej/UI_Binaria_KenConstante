@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Ryan's Club - Credit Card Dumps",
+  "Type": "Screen",
+  "Id": "_HPOz0ENfEetUStW7FB9Pg",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/_HPOz0ENfEetUStW7FB9Pg",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/R4hBQ2KafUiT1EwpxaRgFg",
+  "Created": "2025-08-11T22:24:07.3336224Z",
+  "Updated": "2025-08-11T22:24:07.3336224Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

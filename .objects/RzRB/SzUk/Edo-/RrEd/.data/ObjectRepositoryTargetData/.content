@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Ls3Oca3W0WS9HTjIGkh2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html" CVScreenId="f5829cab-8ad0-45d4-bbd9-ac1c70ebc6e2" CvTextArea="255, 235, 302, 34" CvTextArgument="Welcome: Home" CvType="Text" DesignTimeRectangle="257, 227, 1632, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="a878f8ea-1d1e-4ff6-9ad6-49dff5531d0b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f5829cab-8ad0-45d4-bbd9-ac1c70ebc6e2" CvTextArea="257, 288, 98, 14" CvTextArgument="Recent Events" CvType="Text" DesignTimeRectangle="257, 283, 97, 24" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl parentid='layoutSidenav_content' tag='LI' type='' class='breadcrumb-item active' aaname='Recent Events' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Recent Events' /&gt;" Guid="915395e6-64a6-46dd-a492-feb3260774dc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ecba3f446e365dd92dc76b7bb661bc19.png" xmlns="">0OezmrkyOhkKVRn9vxrNDbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

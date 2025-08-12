@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Ryan's Club - Login",
+  "Type": "Screen",
+  "Id": "Edo-gULMVEmD07_-_zqj-w",
+  "Reference": "TgrS9lbt7kaBji_ZMtNtew/Edo-gULMVEmD07_-_zqj-w",
+  "ParentRef": "TgrS9lbt7kaBji_ZMtNtew/SzUkNXm0J02ncHLK02Xq-w",
+  "Created": "2025-08-11T21:48:19.4518346Z",
+  "Updated": "2025-08-11T21:48:19.4518346Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

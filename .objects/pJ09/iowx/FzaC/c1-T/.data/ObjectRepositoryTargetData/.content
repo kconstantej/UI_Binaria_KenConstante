@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GBej0XL58kSkcfcu7skLXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idp.automationanywhere.com/s/login" CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="774, 380, 388, 38" CvType="InputBox" DesignTimeRectangle="776, 382, 385, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="85a34666-8643-4b9b-9e58-dc8fc6a9ab56" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f7ff6f2f-6c81-4183-8bb3-829430035291" CvElementArea="775, 426, 387, 46" CvTextArea="951, 441, 34, 14" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="776, 428, 385, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='slds-button slds-button_brand button' aaname='Next' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="042405b2-3c8d-43a3-918d-4dc599b1809d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="92288b505d6a309fc85cdf14b864c5d4.png" xmlns="">0FWwLT8khP0WjZsNV5M6vXw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l0ya48GfUUen8BcUxPKD8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclublogin.html" CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="935, 479, 327, 47" CvType="InputBox" DesignTimeRectangle="936, 481, 326, 45" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="1de33995-68c3-453d-a738-5c97df7b1b0f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bcf856f9-fde3-4889-adeb-85803a858df4" CvElementArea="934, 545, 329, 47" CvType="InputBox" DesignTimeRectangle="936, 546, 326, 45" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="da1b6167-4492-4717-94eb-f77764b1c063" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="617f60f7c8ecb96c13ecc46d3544b910.png" xmlns="">0LTppQoguVkifCUFaNQOMWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wo37I55z-0iDdHqguoWSSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-cyberlossprevention.html" CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" CvElementArea="1467, 935, 231, 37" CvTextArea="1522, 946, 119, 16" CvTextArgument="Accept All Cookies" CvType="Button" DesignTimeRectangle="1470, 937, 225, 33" ElementType="Button" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" Guid="24cf0892-3f4f-4e9b-90ec-4aeaa3957373" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | Automation Pathfinder | Automation Anywhere' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f6566caf-7de1-4f28-a625-7d001070d69e" CvTextArea="1525, 1007, 100, 16" CvTextArgument="Cookie Settings" CvType="Text" DesignTimeRectangle="1314, 995, 524, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='onetrust-pc-btn-handler' tag='BUTTON' type='' class='cookie-setting-link' aaname='Cookie Settings' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cookie Settings' /&gt;" Guid="d81d4220-ef71-4228-8437-45c0e03e654d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9d2e1d267546488ef96d78e100af53ce.png" xmlns="">0ujvFaTuXbEqyaB4RtwHRkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

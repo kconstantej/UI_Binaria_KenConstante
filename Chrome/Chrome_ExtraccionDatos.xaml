@@ -1,0 +1,222 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Chrome_ExtraccionDatos" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_dt_DatosTarjeta" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Chrome_ExtraccionDatos" sap:VirtualizedContainerService.HintSize="1289,1135" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message Inicia Chrome_ExtraccionDatos" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"---&gt;Inicia Chrome_ExtraccionDatos..."</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Ryan's Club - Credit Card Dumps" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,775" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="511ef13b-13f9-4e6d-8e1f-58395763cb0f" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do extraer informacion" sap:VirtualizedContainerService.HintSize="450,526" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="511ef13b-13f9-4e6d-8e1f-58395763cb0f" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_home.html" CVScreenId="a44a43ec-06a0-417a-bd23-15e7662f6525" ContentHash="o3jy1HG7KkW-xYjPfP1TUw" CvElementArea="441, 492, 50, 33" CvTextArea="450, 502, 31, 13" CvTextArgument="View" CvType="Button" DesignTimeRectangle="442, 493, 48, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='layoutSidenav_content' tag='A' /&gt;" Guid="1f2e2d7e-6b62-468c-af30-a394a9f1752f" InformativeScreenshot="b095dc1bdd34b9a1c261b0e7b32ede9c.png" Reference="TgrS9lbt7kaBji_ZMtNtew/Hrh0D4nLfkSfI6J6iOKukg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a44a43ec-06a0-417a-bd23-15e7662f6525" CvTextArea="441, 376, 237, 18" CvTextArgument="Credit Card Dump 349473" CvType="Text" DesignTimeRectangle="442, 373, 382, 24" ElementType="Text" Guid="b221afe0-569c-4ee9-9342-929b34287675" SearchSteps="Selector">
+                        <uix:Target.FullSelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"&lt;webctrl aaname='Credit Card Dump "+in_Config["NumeroCreditCardDump"].ToString()+"' /&gt;"</CSharpValue>
+                          </InArgument>
+                        </uix:Target.FullSelectorArgument>
+                      </uix:Target>
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Card Number' ReferenceIdx='0' Name='Card Number'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Expiration' ReferenceIdx='1' Name='Expiration'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Level' ReferenceIdx='2' Name='Level'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Brand' ReferenceIdx='3' Name='Brand'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Brand Src' ReferenceIdx='4' Name='Brand Src' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Card Type' ReferenceIdx='5' Name='Card Type'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last Name' ReferenceIdx='6' Name='Last Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='City/State' ReferenceIdx='7' Name='City/State'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Zip' ReferenceIdx='8' Name='Zip'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Country' ReferenceIdx='9' Name='Country'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Price' ReferenceIdx='10' Name='Price' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Buy?' ReferenceIdx='11' Name='Buy?' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Card Number' attr='fulltext' /&gt;&lt;column name='Expiration' attr='fulltext' /&gt;&lt;column name='Level' attr='fulltext' /&gt;&lt;column name='Brand' attr='fulltext' name2='Brand Src' attr2='src' /&gt;&lt;column name='Card Type' attr='fulltext' /&gt;&lt;column name='Last Name' attr='fulltext' /&gt;&lt;column name='City/State' attr='fulltext' /&gt;&lt;column name='Zip' attr='fulltext' /&gt;&lt;column name='Country' attr='fulltext' /&gt;&lt;column name='Price' attr='fulltext' /&gt;&lt;column name='Buy?' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="511ef13b-13f9-4e6d-8e1f-58395763cb0f" Version="V4">
+              <uix:NExtractData.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">out_dt_DatosTarjeta</CSharpReference>
+                </InOutArgument>
+              </uix:NExtractData.DataTable>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html" ContentHash="Hv_wut6sI0S5dIzQhNGmfA" DesignTimeRectangle="274, 445, 1598, 2393" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;" Guid="f98fa816-9992-4124-a282-fadf74373152" InformativeScreenshot="6d7ceb9e7a8cc6d19775b76ac19185e5.png" Reference="TgrS9lbt7kaBji_ZMtNtew/ZBkm0U3zM0yIkdpareoiZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data 'Extract Table Data' tarjetas" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Card Number' ReferenceIdx='0' Name='Card Number'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Expiration' ReferenceIdx='1' Name='Expiration'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Level' ReferenceIdx='2' Name='Level'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Brand' ReferenceIdx='3' Name='Brand'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Brand Src' ReferenceIdx='4' Name='Brand Src' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Card Type' ReferenceIdx='5' Name='Card Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last Name' ReferenceIdx='6' Name='Last Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='City/State' ReferenceIdx='7' Name='City/State'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Zip' ReferenceIdx='8' Name='Zip'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Country' ReferenceIdx='9' Name='Country'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Price' ReferenceIdx='10' Name='Price' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Buy?' ReferenceIdx='11' Name='Buy?' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Card Number' attr='fulltext' /&gt;&lt;column name='Expiration' attr='fulltext' /&gt;&lt;column name='Level' attr='fulltext' /&gt;&lt;column name='Brand' attr='fulltext' name2='Brand Src' attr2='src' /&gt;&lt;column name='Card Type' attr='fulltext' /&gt;&lt;column name='Last Name' attr='fulltext' /&gt;&lt;column name='City/State' attr='fulltext' /&gt;&lt;column name='Zip' attr='fulltext' /&gt;&lt;column name='Country' attr='fulltext' /&gt;&lt;column name='Price' attr='fulltext' /&gt;&lt;column name='Buy?' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="511ef13b-13f9-4e6d-8e1f-58395763cb0f" Version="V4">
+                    <uix:NExtractData.DataTable>
+                      <InOutArgument x:TypeArguments="sd:DataTable">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">out_dt_DatosTarjeta</CSharpReference>
+                      </InOutArgument>
+                    </uix:NExtractData.DataTable>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/automationanywherelabs-ryansclub_ccdumps_349473.html" ContentHash="Yg_DJAcv1k6B0RltvjEGng" DesignTimeRectangle="274, 445, 1598, 2393" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;" Guid="1695d5a4-b9d2-47cc-a026-eb23a649c1ea" InformativeScreenshot="a656db64122eebab7fe1df9e6d146cbb.png" Reference="TgrS9lbt7kaBji_ZMtNtew/VyOR756zPkiqQBXj9McVWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1064, -1088, 1936, 1048" BrowserType="Chrome" ContentHash="irXDsNtrYku4mHt00JrXBg" IconBase64="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" InformativeScreenshot="bb2eed855457fe72346bbba99547ed49.jpg" Reference="TgrS9lbt7kaBji_ZMtNtew/_HPOz0ENfEetUStW7FB9Pg" Selector="&lt;html app='chrome.exe' title='Ryan&amp;apos;s Club - Credit Card Dumps' /&gt;" Version="V2">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">in_Config["UrlRyansClub"].ToString()</CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message Termina Chrome_ExtraccionDatos" sap:VirtualizedContainerService.HintSize="484,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">"Termina Chrome_ExtraccionDatos"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
