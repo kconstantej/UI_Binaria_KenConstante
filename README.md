@@ -19,9 +19,13 @@ Cuenta en Automation Anywhere Community Edition (A360)
 
 SQLite Studio instalado
 
+Instalar el odbc de Sqlite3
+
 Acceso a Google Chrome para ejecutar la automatización.
 
 UiPath Studio instalado (versión compatible con el proyecto).
+
+Configurar para que la extensión de UiPath para Chrome funcione también en pestañas de incógnito. 
 
 Configuración de Assets en Orchestrator
 | Name                                | Description                                                  | Type       | Value                                                                                                         | Labels | Properties |

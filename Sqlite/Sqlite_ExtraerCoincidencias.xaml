@@ -39,7 +39,6 @@
       <x:String>UiPath.Database.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>CredentialManagement</x:String>
-      <x:String>UiPath.Credentials.Activities</x:String>
       <x:String>System.Net</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>System.Numerics</x:String>
@@ -328,7 +327,7 @@
         </InArgument>
       </ui:ForEachRow.DataTable>
     </ui:ForEachRow>
-    <ui:DatabaseDisconnect DisplayName="Disconnect from Database" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_3">
+    <ui:DatabaseDisconnect DisplayName="Disconnect from Database desconectar base" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_3">
       <ui:DatabaseDisconnect.DatabaseConnection>
         <InArgument x:TypeArguments="ui:DatabaseConnection">
           <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">ConecDataBase</CSharpValue>
