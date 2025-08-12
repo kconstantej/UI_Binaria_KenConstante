@@ -117,12 +117,13 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sqlite_ExtraerCoincidencias" sap:VirtualizedContainerService.HintSize="1151,1769" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sqlite_ExtraerCoincidencias" sap:VirtualizedContainerService.HintSize="1289,2189" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="ConecDataBase" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Consulta" />
+      <Variable x:TypeArguments="x:String" Name="Result" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -172,22 +173,22 @@
         </OutArgument>
       </ui:DatabaseConnect.DatabaseConnection>
     </ui:DatabaseConnect>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table last name" sap:VirtualizedContainerService.HintSize="454,993" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table last name" sap:VirtualizedContainerService.HintSize="454,1413" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,813" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1233" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message " sap:VirtualizedContainerService.HintSize="418,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+            <ui:LogMessage DisplayName="Log Message datos" sap:VirtualizedContainerService.HintSize="418,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23" xml:space="preserve">@"SELECT  cd.customer_id   AS CustomerID,
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24" xml:space="preserve">@"Consulta SQL SELECT  cd.customer_id   AS CustomerID,
          cd.first_name    AS FirstName,
          cd.last_name     AS LastName,
          c.card_number    AS CardNumber,
@@ -263,19 +264,38 @@
                 </InArgument>
               </ui:ExecuteQuery.Sql>
             </ui:ExecuteQuery>
-            <If DisplayName="If existe datos " sap:VirtualizedContainerService.HintSize="418,434" sap2010:WorkflowViewState.IdRef="If_1">
+            <If DisplayName="If existe datos " sap:VirtualizedContainerService.HintSize="418,854" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">dt_Consulta != null &amp;&amp; dt_Consulta.Rows.Count &gt; 0</CSharpValue>
                 </InArgument>
               </If.Condition>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,501" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:OutputDataTable DisplayName="Output Data Table as Text slaida tabla" sap:VirtualizedContainerService.HintSize="382,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1">
+                    <ui:OutputDataTable.DataTable>
+                      <InArgument x:TypeArguments="sd:DataTable">
+                        <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">dt_Consulta</CSharpValue>
+                      </InArgument>
+                    </ui:OutputDataTable.DataTable>
+                    <ui:OutputDataTable.Text>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Result</CSharpReference>
+                      </OutArgument>
+                    </ui:OutputDataTable.Text>
+                  </ui:OutputDataTable>
+                  <ui:LogMessage DisplayName="Log Message existen datos" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"la respuesta de la consulta es: "+Result</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
                   <ui:MergeDataTable DisplayName="Merge Data Table unir consultas" sap:VirtualizedContainerService.HintSize="382,156" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add">
                     <ui:MergeDataTable.Destination>
                       <InOutArgument x:TypeArguments="sd:DataTable">
@@ -291,12 +311,19 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message no existen datos" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">"No existen datos para esa consulta"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
                 </Sequence>
               </If.Else>
             </If>
