@@ -88,7 +88,7 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process chrome" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Excel" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process chrome" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="chrome" />
     <ui:LogMessage DisplayName="Log message (Kill processes) termina" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
